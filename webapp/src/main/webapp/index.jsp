@@ -144,7 +144,7 @@
             <img class=footer-img src="./exc9-resource/images/footer-delivery.jpg">
             <div class=footer-item-desc>
                 <h3>
-                    המשלוח עלינו!
+                    Delivery!
                 </h3>
                 <p>
                     אולי נפגש באחד מ-60 הסניפים שלנו ברחבי הארץ? אנחנו נדאג שהמשלוח שלך כבר יהיה שם. בחינם.
