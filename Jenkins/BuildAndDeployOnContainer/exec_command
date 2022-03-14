@@ -1,0 +1,3 @@
+cd /opt/docker;
+docker build -t regapp:v1 .;
+docker run -d --name registerapp -p 8087:8080 regapp:v1;
