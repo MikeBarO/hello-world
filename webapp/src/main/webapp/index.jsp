@@ -158,7 +158,7 @@
             <img class=footer-img src="./exc9-resource/images/footer-365.jpg">
             <div class=footer-item-desc>
                 <h3>
-                    אחריות מקיפה, באחריות!
+                    Warranty!
                 </h3>
                 <p>
                     בחיים צריך לדעת לקחת אחריות. במשך שנה ממועד הרכישה משקפייך מוגנים באחריות מלאה מפני פגם בייצור.
