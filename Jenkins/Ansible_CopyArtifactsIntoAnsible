@@ -14,6 +14,9 @@ Build:
   Goals and options:
     clean install
 
+Schedule:
+    * * * *
+
 Post Steps:
   SSH Publishers:
     SSH server:
@@ -30,4 +33,4 @@ Post Steps:
       //opt//docker
 
     Exec command:
-        ansible-playbook regapp.yml
+        ansible-playbook /opt/docker/regapp.yml
