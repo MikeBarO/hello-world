@@ -1,3 +1,0 @@
-SSH server:     dockerhost
-source files:   webapp/target/*.war
-remote dir :    //opt//docker
