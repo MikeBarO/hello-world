@@ -1,1 +1,26 @@
+Description:
+    Copy Artifacts into Ansible
 
+Repository URL:
+    https://github.com/MikeBarO/hello-world.git
+    
+Branch Specifier:
+    */master
+    
+Build:
+  Root POM:
+    pom.xml
+  Goals and options:
+    clean install
+  
+SSH server:
+    ansible-server
+    
+Source files:
+    webapp/target/*.war
+    
+Remove prefix:
+    webapp/target
+    
+Remote directory:
+    //opt//docker
