@@ -28,3 +28,6 @@ Post Steps:
     
     Remote directory:
       //opt//docker
+
+    Exec command:
+        ansible-playbook regapp.yml
