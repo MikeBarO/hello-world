@@ -14,6 +14,9 @@ Build:
   Goals and options:
     clean install
 
+Schedule:
+    * * * *
+
 Post Steps:
   SSH Publishers:
     SSH server:
