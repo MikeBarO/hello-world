@@ -1,22 +1,37 @@
-Build Code with help of maven and Deploy it on Docker
+Description:
+    Build Code with help of maven and Deploy it on Docker
 
+Source Code Management:
+  Repository URL:
+    https://github.com/MikeBarO/hello-world.git
+    
+  Branch Specifier:
+    */master
+    
+Build:
+  Root POM:
+    pom.xml
+  Goals and options:
+    clean install
 
+Post Steps:
+  SSH Publishers:
+    SSH server:
+      dockerhost
 
-SSH server:
-    dockerhost
+  Transfers:
+    Source files:
+        webapp/target/*.war
     
-Source files:
-    webapp/target/*.war
+    Remove prefix:
+        webapp/target
     
-Remove prefix:
-    webapp/target
-    
-Remote directory:
-    //opt//docker
-    
-Exec command:
-    cd /opt/docker;
-    docker build -t regapp:v1 .;
-    docker stop registerapp; 
-    docker rm registerapp; 
-    docker run -d --name registerapp -p 8087:8080 regapp:v1;
+    Remote directory:
+        //opt//docker
+      
+    Exec command:
+        cd /opt/docker;
+        docker build -t regapp:v1 .;
+        docker stop registerapp; 
+        docker rm registerapp; 
+        docker run -d --name registerapp -p 8087:8080 regapp:v1;
