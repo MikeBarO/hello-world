@@ -1,3 +1,18 @@
-SSH server:     dockerhost
-source files:   webapp/target/*.war
-remote dir :    //opt//docker
+SSH server:
+    dockerhost
+    
+Source files:
+    webapp/target/*.war
+    
+Remove prefix:
+    webapp/target
+    
+Remote directory:
+    //opt//docker
+    
+Exec command:
+    cd /opt/docker;
+    docker build -t regapp:v1 .;
+    docker stop registerapp; 
+    docker rm registerapp; 
+    docker run -d --name registerapp -p 8087:8080 regapp:v1;
