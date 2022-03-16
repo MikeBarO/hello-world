@@ -33,4 +33,6 @@ Post Steps:
       //opt//docker
 
     Exec command:
-        ansible-playbook /opt/docker/regapp.yml
+        ansible-playbook /opt/docker/regapp.yml;
+        sleep 10;
+        ansible-playbook /opt/docker/deploy_regapp.yml
