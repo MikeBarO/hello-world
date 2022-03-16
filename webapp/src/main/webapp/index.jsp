@@ -144,7 +144,7 @@
             <img class=footer-img src="./exc9-resource/images/footer-delivery.jpg">
             <div class=footer-item-desc>
                 <h3>
-                    Delivery!
+                    New Delivery!
                 </h3>
                 <p>
 			        Costumer Service! Warranty Policy New CI/CD List!
