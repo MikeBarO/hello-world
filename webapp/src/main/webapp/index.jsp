@@ -147,7 +147,7 @@
                     Delivery!
                 </h3>
                 <p>
-			        Costumer Service!
+			        Costumer Service! Warranty Policy New CI/CD List!
                 </p>
             </div>
         </div>
