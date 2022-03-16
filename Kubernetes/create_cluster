@@ -1,6 +1,3 @@
 eksctl create cluster --name michaelbar \
---region region-name \
---node-type instance-type \
---node-min 2 \
---node-max 2 \
---zones <AZ-1>,<AZ-2>
+--region us-east-2 \
+--node-type t2.small \
