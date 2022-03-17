@@ -1,0 +1,9 @@
+Description:
+    My First Maven Project
+
+Repositories:
+    https://github.com/MikeBarO/hello-world.git
+
+Root POM:
+    pom.xml
+    clean install
