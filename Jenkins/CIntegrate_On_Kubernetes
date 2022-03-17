@@ -1,0 +1,2 @@
+Description:
+      Build code with help of Maven and create an image on Ansible and Push it onto Deockerhub
