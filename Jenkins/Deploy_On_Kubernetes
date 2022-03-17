@@ -1,0 +1,9 @@
+Description:
+  Deploy on Kubernetes
+
+SSH Publishers:
+  ansible-server
+
+Exec command:
+  ansible-playbook -i /opt/docker/hosts kube_deploy.yml
+  ansible-playbook -i /opt/docker/hosts kube_service.yml
