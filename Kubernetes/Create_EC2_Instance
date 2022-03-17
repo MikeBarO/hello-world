@@ -1,0 +1,29 @@
+1) Create EC2 Instance
+2) Create AWS IAM Role
+  Role name:    eksctl_role
+  Description:  Allows EC2 instances to call AWS services on your behalf.
+  Step 1: Select trusted entities:
+            {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Action": [
+                            "sts:AssumeRole"
+                        ],
+                        "Principal": {
+                            "Service": [
+                                "ec2.amazonaws.com"
+                            ]
+                        }
+                    }
+                ]
+            }
+   Step 2: Add permissions:
+          AmazonEC2FullAccess
+          AWSCloudFormationFullAccess
+          AdministratorAccess
+          IAMFullAccess
+   
+   
+3) 

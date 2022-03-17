@@ -1,0 +1,32 @@
+[root@ip-172-31-3-71 tmp]# cat /root/.kube/config
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ETXhOakUyTkRVeU9Gb1hEVE15TURNeE16RTJORFV5T0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTFJlClpPMW4yb3YvblhlR25jUXZ0Y1hzTEJPaGp6d0F0SThtYm5vUjlXTFFKcEhjcUR4dkxIY0RKNHpZVlF0d1lxZ0QKZm5TMVNUdVd6N0JWcW00a25MN2sraFgzdEkxN2xYRmhmK2s5elJ2VEFiL2l4VzFMSzBLQVNDNHRSVDEwaW9KUAo5SVBraTRaWUM1N1pxN1B6MVVYT01Nb3plMm5JbHZxbGl3QVkydkxyYzY3eTFBcERZNTZlSkV4dTlpT3ZyVU0zCjZiWERuVVNRS2JqNGdsRTdnYlFLTHpzWkRSWCtEcHR3Sy9WNzR6c1FCancxMWVabkw1bUZtdVRYK0IwNWNERTgKSjYvVGtid1N0d3hoOWRrRVZNdmcvZnJkM292azFmL3ZzTWRWTFN4cWtGSFNMNGpmVFBteFZSL0VEaE92RnNuaQpSSGtxQUFlR01IWm1LUDJocUJVQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZKdU4zME1kWjhxMXoyRmZTQlZyUWsrQ2VJczdNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFCWm10Y29MNDA0cjdCbFlOcTVqZnFvS3VxYi8zYzlCbVlRRFhWMWVkQXVCaFpiRFRoWQp2cXcrNm1BMHVpT3Q4b0xJNEZjKzF2amZSQXUycXl1cmVCYkZHM3ZXckdnd29LQTRMY3FMb0ZzVWk1d2lETWZvCkh1a0JyeDBJNXk2SXlJUXpWcGRkSG9CSVFZekRUUmVmdGtBdjVGbm45SkY5WEZtYXY2MmJWdzlKTHhieDhjL1cKKzV1TVZoTmRwenlXditXNERZcFQvdDJkaXU0TFNMMldoaFpHMHVIOE1ZR05SOGdkaGc5OWFYbW1pR0QrU0I5UgpEYkZPNnZuTkhTclJrSEpsdU9ESjR6WncxWnN4TU54dWkvb1VEQ3FGV0J3TlR3NjFUQWNydmJja3pVbVE4NGpvCkY1cVhYazVockhDMFVWTnhiRE5SM0JOTlI4RXBmWGQzZXdhTwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://84353CE50FD979F7714849CC6F3F58DB.gr7.us-east-2.eks.amazonaws.com
+  name: michaelbar.us-east-2.eksctl.io
+contexts:
+- context:
+    cluster: michaelbar.us-east-2.eksctl.io
+    user: i-0226fae1999a2e683@michaelbar.us-east-2.eksctl.io
+  name: i-0226fae1999a2e683@michaelbar.us-east-2.eksctl.io
+current-context: i-0226fae1999a2e683@michaelbar.us-east-2.eksctl.io
+kind: Config
+preferences: {}
+users:
+- name: i-0226fae1999a2e683@michaelbar.us-east-2.eksctl.io
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - eks
+      - get-token
+      - --cluster-name
+      - michaelbar
+      - --region
+      - us-east-2
+      command: aws
+      env:
+      - name: AWS_STS_REGIONAL_ENDPOINTS
+        value: regional
+      provideClusterInfo: false

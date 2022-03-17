@@ -1,0 +1,19 @@
+# Run this command on the node where kubelet is running
+#mkdir /etc/kubelet.d/
+#cat <<EOF >/etc/kubelet.d/static-web.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: michael-pod
+  labels:
+    app: michael-app
+spec:
+  containers:
+    - name: michael-nginx
+      image: nginx
+      ports:
+        - name: michael-nginx
+          containerPort: 80
+          protocol: TCP
+EOF

@@ -1,0 +1,6 @@
+Description:
+    Hello World job
+    
+Command:
+    echo "Hello World"
+    uptime
